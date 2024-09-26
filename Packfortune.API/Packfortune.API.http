@@ -1,0 +1,6 @@
+@Packfortune.API_HostAddress = http://localhost:5223
+
+GET {{Packfortune.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

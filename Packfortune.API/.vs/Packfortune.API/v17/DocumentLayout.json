@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5D38A938-28F9-4606-B107-7C0C5EE14679}|..\\Packfortune.data\\Packfortune.data.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BCCEFE6-3F59-4CAB-B537-5C7DA9C936E1}|..\\Packfortune.Logic\\Packfortune.Logic.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.logic\\usercoinservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D38A938-28F9-4606-B107-7C0C5EE14679}|..\\Packfortune.data\\Packfortune.data.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.data\\addusercoins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BCCEFE6-3F59-4CAB-B537-5C7DA9C936E1}|..\\Packfortune.Logic\\Packfortune.Logic.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.logic\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A69AC1F-B846-4964-93D6-0D82C148DF9A}|Packfortune.API.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4A69AC1F-B846-4964-93D6-0D82C148DF9A}|Packfortune.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BCCEFE6-3F59-4CAB-B537-5C7DA9C936E1}|..\\Packfortune.Logic\\Packfortune.Logic.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.logic\\interfaces\\iaddusercoins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAddUserCoins.cs",
+              "DocumentMoniker": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Logic\\Interfaces\\IAddUserCoins.cs",
+              "RelativeDocumentMoniker": "..\\Packfortune.Logic\\Interfaces\\IAddUserCoins.cs",
+              "ToolTip": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Logic\\Interfaces\\IAddUserCoins.cs",
+              "RelativeToolTip": "..\\Packfortune.Logic\\Interfaces\\IAddUserCoins.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T07:06:24.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.data\\ApplicationDBContext.cs",
+              "RelativeDocumentMoniker": "..\\Packfortune.data\\ApplicationDBContext.cs",
+              "ToolTip": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.data\\ApplicationDBContext.cs",
+              "RelativeToolTip": "..\\Packfortune.data\\ApplicationDBContext.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA6wBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T10:47:06.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.API\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.API\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-25T10:37:29.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserCoinService.cs",
+              "DocumentMoniker": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Logic\\UserCoinService.cs",
+              "RelativeDocumentMoniker": "..\\Packfortune.Logic\\UserCoinService.cs",
+              "ToolTip": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Logic\\UserCoinService.cs",
+              "RelativeToolTip": "..\\Packfortune.Logic\\UserCoinService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T12:46:13.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddUserCoins.cs",
+              "DocumentMoniker": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.data\\AddUserCoins.cs",
+              "RelativeDocumentMoniker": "..\\Packfortune.data\\AddUserCoins.cs",
+              "ToolTip": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.data\\AddUserCoins.cs",
+              "RelativeToolTip": "..\\Packfortune.data\\AddUserCoins.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T10:56:45.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Logic\\Models\\User.cs",
+              "RelativeDocumentMoniker": "..\\Packfortune.Logic\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Logic\\Models\\User.cs",
+              "RelativeToolTip": "..\\Packfortune.Logic\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T11:01:24.629Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
