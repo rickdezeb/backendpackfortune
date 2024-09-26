@@ -45,8 +45,7 @@
               "RelativeToolTip": "..\\Packfortune.Logic\\Interfaces\\IAddUserCoins.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T07:06:24.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T07:06:24.72Z"
             },
             {
               "$type": "Document",
@@ -56,7 +55,7 @@
               "RelativeDocumentMoniker": "..\\Packfortune.data\\ApplicationDBContext.cs",
               "ToolTip": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.data\\ApplicationDBContext.cs",
               "RelativeToolTip": "..\\Packfortune.data\\ApplicationDBContext.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAA6wBIAAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAiwBIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-25T10:47:06.916Z",
               "EditorCaption": ""
@@ -71,8 +70,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-25T10:37:29.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T10:37:29.33Z"
             },
             {
               "$type": "Document",
@@ -84,8 +82,7 @@
               "RelativeToolTip": "..\\Packfortune.Logic\\UserCoinService.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T12:46:13.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T12:46:13.886Z"
             },
             {
               "$type": "Document",
@@ -97,8 +94,7 @@
               "RelativeToolTip": "..\\Packfortune.data\\AddUserCoins.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T10:56:45.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T10:56:45.351Z"
             },
             {
               "$type": "Document",
@@ -110,8 +106,7 @@
               "RelativeToolTip": "..\\Packfortune.Logic\\Models\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T11:01:24.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T11:01:24.629Z"
             }
           ]
         }

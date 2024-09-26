@@ -72,3 +72,4 @@ C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel proj
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.pdb
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.genruntimeconfig.cache
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\ref\Packfortune.API.dll
+C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.sourcelink.json
