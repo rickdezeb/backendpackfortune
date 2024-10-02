@@ -3,44 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.API\\",
   "Documents": [
     {
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{5D38A938-28F9-4606-B107-7C0C5EE14679}|..\\Packfortune.data\\Packfortune.data.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{CB937B9C-C445-4F99-A982-9D399742DBFC}|..\\Packfortune.Tests\\Packfortune.Tests.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.tests\\addcoinstest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BCCEFE6-3F59-4CAB-B537-5C7DA9C936E1}|..\\Packfortune.Logic\\Packfortune.Logic.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.logic\\interfaces\\iaddusercoins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB937B9C-C445-4F99-A982-9D399742DBFC}|..\\Packfortune.Tests\\Packfortune.Tests.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.tests\\addusercoinstest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> Stashed changes
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8BCCEFE6-3F59-4CAB-B537-5C7DA9C936E1}|..\\Packfortune.Logic\\Packfortune.Logic.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.logic\\usercoinservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{5D38A938-28F9-4606-B107-7C0C5EE14679}|..\\Packfortune.data\\Packfortune.data.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.data\\addusercoins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BCCEFE6-3F59-4CAB-B537-5C7DA9C936E1}|..\\Packfortune.Logic\\Packfortune.Logic.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.logic\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A69AC1F-B846-4964-93D6-0D82C148DF9A}|Packfortune.API.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4A69AC1F-B846-4964-93D6-0D82C148DF9A}|Packfortune.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BCCEFE6-3F59-4CAB-B537-5C7DA9C936E1}|..\\Packfortune.Logic\\Packfortune.Logic.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.logic\\interfaces\\iaddusercoins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{8BCCEFE6-3F59-4CAB-B537-5C7DA9C936E1}|..\\Packfortune.Logic\\Packfortune.Logic.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.logic\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D38A938-28F9-4606-B107-7C0C5EE14679}|..\\Packfortune.data\\Packfortune.data.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.data\\addusercoins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB937B9C-C445-4F99-A982-9D399742DBFC}|..\\Packfortune.Tests\\Packfortune.Tests.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.tests\\addcoinstest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A69AC1F-B846-4964-93D6-0D82C148DF9A}|Packfortune.API.csproj|c:\\users\\rickp\\onedrive\\documenten\\school\\leerjaar 2\\semester 3\\individueel project\\project files\\backend\\packfortune.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A69AC1F-B846-4964-93D6-0D82C148DF9A}|Packfortune.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -50,23 +20,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< Updated upstream
-          "SelectedChildIndex": 2,
-=======
-          "SelectedChildIndex": 3,
->>>>>>> Stashed changes
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddUserCoinsTest.cs",
-              "DocumentMoniker": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Tests\\AddUserCoinsTest.cs",
-              "RelativeDocumentMoniker": "..\\Packfortune.Tests\\AddUserCoinsTest.cs",
-              "ToolTip": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Tests\\AddUserCoinsTest.cs",
-              "RelativeToolTip": "..\\Packfortune.Tests\\AddUserCoinsTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
+              "DocumentIndex": 0,
+              "Title": "UserCoinService.cs",
+              "DocumentMoniker": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Logic\\UserCoinService.cs",
+              "RelativeDocumentMoniker": "..\\Packfortune.Logic\\UserCoinService.cs",
+              "ToolTip": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Logic\\UserCoinService.cs",
+              "RelativeToolTip": "..\\Packfortune.Logic\\UserCoinService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T11:35:10.807Z",
+              "WhenOpened": "2024-10-02T12:32:43.783Z",
               "EditorCaption": ""
             },
             {
@@ -79,89 +45,20 @@
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 5,
-=======
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AddCoinsTest.cs",
               "DocumentMoniker": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Tests\\AddCoinsTest.cs",
               "RelativeDocumentMoniker": "..\\Packfortune.Tests\\AddCoinsTest.cs",
               "ToolTip": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Tests\\AddCoinsTest.cs",
               "RelativeToolTip": "..\\Packfortune.Tests\\AddCoinsTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAvAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T11:07:48.799Z",
+              "WhenOpened": "2024-10-02T11:44:35.213Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
->>>>>>> Stashed changes
-              "Title": "IAddUserCoins.cs",
-              "DocumentMoniker": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Logic\\Interfaces\\IAddUserCoins.cs",
-              "RelativeDocumentMoniker": "..\\Packfortune.Logic\\Interfaces\\IAddUserCoins.cs",
-              "ToolTip": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Logic\\Interfaces\\IAddUserCoins.cs",
-              "RelativeToolTip": "..\\Packfortune.Logic\\Interfaces\\IAddUserCoins.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< Updated upstream
-              "WhenOpened": "2024-09-26T07:06:24.72Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApplicationDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.data\\ApplicationDBContext.cs",
-              "RelativeDocumentMoniker": "..\\Packfortune.data\\ApplicationDBContext.cs",
-              "ToolTip": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.data\\ApplicationDBContext.cs",
-              "RelativeToolTip": "..\\Packfortune.data\\ApplicationDBContext.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAiwBIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T10:47:06.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.API\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.API\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-25T10:37:29.33Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-=======
-              "WhenOpened": "2024-10-02T11:23:35.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
->>>>>>> Stashed changes
-              "Title": "UserCoinService.cs",
-              "DocumentMoniker": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Logic\\UserCoinService.cs",
-              "RelativeDocumentMoniker": "..\\Packfortune.Logic\\UserCoinService.cs",
-              "ToolTip": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Logic\\UserCoinService.cs",
-              "RelativeToolTip": "..\\Packfortune.Logic\\UserCoinService.cs",
-<<<<<<< Updated upstream
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAANAAAA",
-=======
-              "ViewState": "AQIAAAEAAAAAAAAAAAAswBIAAAAAAAAA",
->>>>>>> Stashed changes
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T12:46:13.886Z"
-            },
-            {
-              "$type": "Document",
-<<<<<<< Updated upstream
               "DocumentIndex": 2,
-=======
-              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -170,31 +67,6 @@
               "ViewState": "AQIAABMAAAAAAAAAAAAAACYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T12:00:37.911Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
->>>>>>> Stashed changes
-              "Title": "AddUserCoins.cs",
-              "DocumentMoniker": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.data\\AddUserCoins.cs",
-              "RelativeDocumentMoniker": "..\\Packfortune.data\\AddUserCoins.cs",
-              "ToolTip": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.data\\AddUserCoins.cs",
-              "RelativeToolTip": "..\\Packfortune.data\\AddUserCoins.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T10:56:45.351Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Logic\\Models\\User.cs",
-              "RelativeDocumentMoniker": "..\\Packfortune.Logic\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\rickp\\OneDrive\\Documenten\\School\\Leerjaar 2\\Semester 3\\Individueel project\\Project files\\Backend\\Packfortune.Logic\\Models\\User.cs",
-              "RelativeToolTip": "..\\Packfortune.Logic\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T11:01:24.629Z"
             }
           ]
         }
