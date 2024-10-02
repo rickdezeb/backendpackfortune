@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Packfortune.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3015b0c734e03dedd2a0e388feeccd22a262904e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eda14d0f2b93f49dacd6ea32f9a15cf87e762d5a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Packfortune.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Packfortune.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

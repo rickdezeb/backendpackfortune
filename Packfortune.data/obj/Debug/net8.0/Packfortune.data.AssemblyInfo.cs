@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Packfortune.data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b10e46bd9d0b74824817186a86a4e18f7350687f")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("Packfortune.data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Packfortune.data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,6 +8,7 @@ C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel proj
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.data\obj\Debug\net8.0\Packfortune.data.AssemblyInfoInputs.cache
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.data\obj\Debug\net8.0\Packfortune.data.AssemblyInfo.cs
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.data\obj\Debug\net8.0\Packfortune.data.csproj.CoreCompileInputs.cache
+C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.data\obj\Debug\net8.0\Packfortune.data.sourcelink.json
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.data\obj\Debug\net8.0\Packfort.6733ED23.Up2Date
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.data\obj\Debug\net8.0\Packfortune.data.dll
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.data\obj\Debug\net8.0\refint\Packfortune.data.dll

@@ -30,13 +30,6 @@ C:\Users\rickp\OneDrive\Documenten\School\S2 Software\Individueel project\Packfo
 C:\Users\rickp\OneDrive\Documenten\School\S2 Software\Individueel project\Packfortune.API\obj\Debug\net8.0\Packfortune.API.pdb
 C:\Users\rickp\OneDrive\Documenten\School\S2 Software\Individueel project\Packfortune.API\obj\Debug\net8.0\Packfortune.API.genruntimeconfig.cache
 C:\Users\rickp\OneDrive\Documenten\School\S2 Software\Individueel project\Packfortune.API\obj\Debug\net8.0\ref\Packfortune.API.dll
-C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.csproj.AssemblyReference.cache
-C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.AssemblyInfoInputs.cache
-C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.AssemblyInfo.cs
-C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.csproj.CoreCompileInputs.cache
-C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\.filenesting.json
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\appsettings.json
@@ -45,9 +38,16 @@ C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel proj
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\Packfortune.API.runtimeconfig.json
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\Packfortune.API.dll
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\Packfortune.API.pdb
+C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\AngleSharp.dll
+C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\AspNet.Security.OpenId.dll
+C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\AspNet.Security.OpenId.Steam.dll
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\MySqlConnector.dll
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
@@ -58,6 +58,14 @@ C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel proj
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\Packfortune.Logic.dll
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\Packfortune.data.pdb
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\bin\Debug\net8.0\Packfortune.Logic.pdb
+C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.csproj.AssemblyReference.cache
+C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.AssemblyInfoInputs.cache
+C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.AssemblyInfo.cs
+C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.csproj.CoreCompileInputs.cache
+C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.sourcelink.json
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\staticwebassets\msbuild.Packfortune.API.Microsoft.AspNetCore.StaticWebAssets.props
@@ -72,4 +80,3 @@ C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel proj
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.pdb
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.genruntimeconfig.cache
 C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\ref\Packfortune.API.dll
-C:\Users\rickp\OneDrive\Documenten\School\Leerjaar 2\Semester 3\Individueel project\Project files\Backend\Packfortune.API\obj\Debug\net8.0\Packfortune.API.sourcelink.json

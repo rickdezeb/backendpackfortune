@@ -5,9 +5,11 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Packfortune.API", "Packfortune.API.csproj", "{4A69AC1F-B846-4964-93D6-0D82C148DF9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Packfortune.data", "..\Packfortune.data\Packfortune.data.csproj", "{5D38A938-28F9-4606-B107-7C0C5EE14679}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Packfortune.data", "..\Packfortune.data\Packfortune.data.csproj", "{5D38A938-28F9-4606-B107-7C0C5EE14679}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Packfortune.Logic", "..\Packfortune.Logic\Packfortune.Logic.csproj", "{8BCCEFE6-3F59-4CAB-B537-5C7DA9C936E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Packfortune.Logic", "..\Packfortune.Logic\Packfortune.Logic.csproj", "{8BCCEFE6-3F59-4CAB-B537-5C7DA9C936E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Packfortune.Tests", "..\Packfortune.Tests\Packfortune.Tests.csproj", "{CB937B9C-C445-4F99-A982-9D399742DBFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{8BCCEFE6-3F59-4CAB-B537-5C7DA9C936E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BCCEFE6-3F59-4CAB-B537-5C7DA9C936E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BCCEFE6-3F59-4CAB-B537-5C7DA9C936E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB937B9C-C445-4F99-A982-9D399742DBFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB937B9C-C445-4F99-A982-9D399742DBFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB937B9C-C445-4F99-A982-9D399742DBFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB937B9C-C445-4F99-A982-9D399742DBFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
