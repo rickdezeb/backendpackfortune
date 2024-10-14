@@ -3,7 +3,10 @@ using Packfortune.data;
 using Packfortune.Logic;
 using Packfortune.Logic.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using MySqlConnector;
+using AspNetCoreRateLimit;
+using AngleSharp;
+using Microsoft.AspNetCore.RateLimiting;
+using System.Threading.RateLimiting;
 
 
 
@@ -19,6 +22,25 @@ options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 builder.Services.AddScoped<IAddUserCoins, AddUserCoins>();
 
 builder.Services.AddScoped<UserCoinService>();
+
+builder.Services.AddRateLimiter(options =>
+{
+    options.AddFixedWindowLimiter("Test", options =>
+    {
+        options.AutoReplenishment = true;
+        options.PermitLimit = 2;
+        options.Window = TimeSpan.FromMinutes(1);
+    });
+
+    options.OnRejected = async (context, token) =>
+    {
+        Console.WriteLine("Rate limit exceeded.");
+        context.HttpContext.Response.StatusCode = 429;
+        await context.HttpContext.Response.WriteAsync(
+            "Too many requests. Please try again later.", cancellationToken: token);
+    };
+});
+
 
 // Add services to the container.
 
@@ -37,6 +59,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseRateLimiter();
 
 app.UseAuthorization();
 
