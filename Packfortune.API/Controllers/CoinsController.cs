@@ -3,11 +3,14 @@
 using Microsoft.AspNetCore.Mvc;
 using Packfortune.Logic.Models;
 using Packfortune.Logic;
+using Microsoft.AspNetCore.RateLimiting;
 
 namespace Packfortune.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+
+    [EnableRateLimiting("Test")]
     public class CoinsController : ControllerBase
     {
         private readonly UserCoinService _userCoinService;
