@@ -9,11 +9,11 @@ using Packfortune.Logic.Models;
 
 namespace Packfortune.data
 {
-    public class AddUserCoins : IAddUserCoins
+    public class UserCoins : IUserCoins
     {
         private readonly ApplicationDBContext _context;
 
-        public AddUserCoins(ApplicationDBContext context)
+        public UserCoins(ApplicationDBContext context)
         {
             _context = context;
         }

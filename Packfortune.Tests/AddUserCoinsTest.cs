@@ -3,7 +3,7 @@ using Packfortune.Logic.Models;
 
 namespace Packfortune.Tests
 {
-    public class AddUserCoinsTest : IAddUserCoins
+    public class AddUserCoinsTest : IUserCoins
     {
         public Task AddUserCoinDataAsync(User userCoinData)
         {
