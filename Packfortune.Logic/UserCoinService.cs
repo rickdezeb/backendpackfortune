@@ -5,14 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Packfortune.Logic.Models;
 using Packfortune.Logic.Interfaces;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Packfortune.Logic
 {
     public class UserCoinService
     {
-        private readonly IAddUserCoins _userCoinRepository;
+        private readonly IUserCoins _userCoinRepository;
 
-        public UserCoinService(IAddUserCoins userCoinRepository)
+        public UserCoinService(IUserCoins userCoinRepository)
         {
             _userCoinRepository = userCoinRepository;
         }
@@ -25,6 +26,11 @@ namespace Packfortune.Logic
             }
 
             await _userCoinRepository.AddUserCoinDataAsync(data);
+        }
+
+        public async Task<User> GetUserInfo(string steamId)
+        {
+            return await _userCoinRepository.GetUserBySteamIdAsync(steamId);
         }
     }
 }
