@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Packfortune.Logic.Models;
 using Packfortune.Logic;
 using Microsoft.AspNetCore.RateLimiting;
+using System.ComponentModel.DataAnnotations;
+using Packfortune.Logic.Exceptions;
 
 namespace Packfortune.API.Controllers
 {
@@ -23,25 +25,20 @@ namespace Packfortune.API.Controllers
         [HttpPost]
         public async Task<IActionResult> PostUserCoinData([FromBody] User userCoinData)
         {
-            if (userCoinData == null)
-            {
-                return BadRequest("Invalid data.");
-            }
-
-            try
-            {
-                await _userCoinService.ProcessUserCoinDataAsync(userCoinData);
-                return Ok("Data processed and saved successfully.");
-            }
-            catch (ArgumentException ex)
-            {
-                return BadRequest(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"An error occurred: {ex.Message}");
-                return StatusCode(500, $"An error occurred while processing the data. {ex.Message}");
-            }
+            await _userCoinService.ProcessUserCoinDataAsync(userCoinData);
+            return Ok(userCoinData);
         }
+
+        [HttpGet("{steamId}")]
+        public async Task<IActionResult> GetUserBySteamId(string steamId)
+        {
+            var user = await _userCoinService.GetUserInfo(steamId);
+            if (user == null)
+            {
+                throw new UserNotFoundException("User not found.");
+            }
+            return Ok(user);
+        }
+
     }
 }

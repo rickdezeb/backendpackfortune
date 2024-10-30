@@ -8,7 +8,7 @@ namespace Packfortune.Logic.Models
 {
     public class User
     {
-        public long SteamId { get; set; }
+        public string SteamId { get; set; }
         public string Username { get; set; }
         public int Coins { get; set; }
     }

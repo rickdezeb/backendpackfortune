@@ -8,9 +8,18 @@ using AngleSharp;
 using Microsoft.AspNetCore.RateLimiting;
 using System.Threading.RateLimiting;
 
-
-
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: "Packfortune",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+        });
+});
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 Console.WriteLine(connectionString);
@@ -19,7 +28,7 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 
-builder.Services.AddScoped<IAddUserCoins, AddUserCoins>();
+builder.Services.AddScoped<IUserCoins, UserCoins>();
 
 builder.Services.AddScoped<UserCoinService>();
 
@@ -51,6 +60,8 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+app.UseMiddleware<ExceptionMiddleware>();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -59,6 +70,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("Packfortune");
 
 app.UseRateLimiter();
 
