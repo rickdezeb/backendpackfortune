@@ -12,7 +12,7 @@ namespace Packfortune.Tests
         [TestMethod]
         public async Task AddNegativeCoinsAsync()
         {
-            IAddUserCoins userCoins = new AddUserCoinsTest();
+            IUserCoins userCoins = new AddUserCoinsTest();
             UserCoinService coinService = new UserCoinService(userCoins);
 
             var user = new User { Coins = -10 };

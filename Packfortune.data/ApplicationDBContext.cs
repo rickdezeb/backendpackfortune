@@ -23,6 +23,5 @@ namespace Packfortune.data
                 .HasKey(u => u.SteamId);
         }
 
-
     }
 }
