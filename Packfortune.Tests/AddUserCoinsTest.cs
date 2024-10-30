@@ -9,5 +9,9 @@ namespace Packfortune.Tests
         {
             return Task.CompletedTask;
         }
+        public Task<User> GetUserBySteamIdAsync(string steamId)
+        {
+            return (Task<User>)Task.CompletedTask;
+        }
     }
 }
