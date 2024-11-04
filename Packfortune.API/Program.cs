@@ -7,6 +7,7 @@ using AspNetCoreRateLimit;
 using AngleSharp;
 using Microsoft.AspNetCore.RateLimiting;
 using System.Threading.RateLimiting;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,8 +30,10 @@ options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 
 builder.Services.AddScoped<IUserCoins, UserCoins>();
+builder.Services.AddScoped<ICrates, Crates>();
 
 builder.Services.AddScoped<UserCoinService>();
+builder.Services.AddScoped<CratesService>();
 
 builder.Services.AddRateLimiter(options =>
 {
@@ -59,6 +62,13 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+            Path.Combine(app.Environment.ContentRootPath, "CratesImages")),
+    RequestPath = "/CratesImages"
+});
 
 app.UseMiddleware<ExceptionMiddleware>();
 
