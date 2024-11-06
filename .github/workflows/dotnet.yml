@@ -28,7 +28,7 @@ jobs:
       run: dotnet test Packfortune.API/Packfortune.API.sln --no-build --verbosity normal
 
     - name: Build Docker image
-      run: docker build -t packfortuneapi:latest .
+      run: docker build -f Packfortune.API/Dockerfile -t packfortuneapi:latest .
 
     # Login to GitHub Container Registry (GHCR)
     - name: Log in to GitHub Container Registry
