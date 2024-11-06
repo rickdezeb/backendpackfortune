@@ -1,28 +1,31 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
-
-name: .NET
+name: .NET Local Docker Build
 
 on:
   push:
-    branches: [ "testing" ]
+    branches: [ "dev" ]
   pull_request:
-    branches: [ "testing" ]
+    branches: [ "dev" ]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
+    
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
+
     - name: Restore dependencies
       run: dotnet restore Packfortune.API/Packfortune.API.sln
+
     - name: Build
       run: dotnet build Packfortune.API/Packfortune.API.sln --no-restore
+
     - name: Test
       run: dotnet test Packfortune.API/Packfortune.API.sln --no-build --verbosity normal
+
+    - name: Build Docker image
+      run: docker build -t packfortuneapi:latest .
