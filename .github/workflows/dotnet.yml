@@ -15,6 +15,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}
   DOTNET_VERSION: '8.0.x'
   SOLUTION_NAME: 'Packfortune.API'
+  SOLUTION_NAME2: 'Packfortune.API/Packfortune.API'
 
 jobs:
   build-test-and-coverage:
@@ -29,10 +30,10 @@ jobs:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Restore Dependencies 🔄
-        run: dotnet restore ${{ env.SOLUTION_NAME }}.sln
+        run: dotnet restore ${{ env.SOLUTION_NAME2 }}.sln
 
       - name: Build Solution 🔨
-        run: dotnet build ${{ env.SOLUTION_NAME }}.sln -c Release --no-restore
+        run: dotnet build ${{ env.SOLUTION_NAME2 }}.sln -c Release --no-restore
 
       - name: Run Tests with Coverage 🧪
         run: dotnet test ${{ env.SOLUTION_NAME }}.Tests/${{ env.SOLUTION_NAME }}.Tests.csproj -c Release --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=./lcov.info
