@@ -67,13 +67,6 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 
-app.UseStaticFiles(new StaticFileOptions
-{
-    FileProvider = new PhysicalFileProvider(
-            Path.Combine(app.Environment.ContentRootPath, "CratesImages")),
-    RequestPath = "/CratesImages"
-});
-
 
 
 app.UseMiddleware<ExceptionMiddleware>();
