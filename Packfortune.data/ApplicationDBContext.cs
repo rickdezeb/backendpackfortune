@@ -16,11 +16,15 @@ namespace Packfortune.data
         }
 
         public DbSet<User> UserCoinData { get; set; }
+        public DbSet<Crate> CrateData { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>()
                 .ToTable("users")
                 .HasKey(u => u.SteamId);
+
+            modelBuilder.Entity<Crate>()
+                .ToTable("crates");
         }
 
     }

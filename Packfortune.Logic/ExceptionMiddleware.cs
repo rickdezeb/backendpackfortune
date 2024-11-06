@@ -42,6 +42,16 @@ namespace Packfortune.Logic
                     message = ex.Message;
                     statusCode = HttpStatusCode.NotFound;
                     break;
+
+                case NegativePriceException _:
+                    message = ex.Message;
+                    statusCode = HttpStatusCode.NotFound;
+                    break;
+
+                case NoNameException _:
+                    message = ex.Message;
+                    statusCode = HttpStatusCode.NotFound;
+                    break;
             }
 
             var response = new
