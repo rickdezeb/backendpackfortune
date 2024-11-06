@@ -60,7 +60,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.Urls.Add("http://0.0.0.0:8080"); 
+app.Urls.Add("http://+:8080"); 
 
 app.UseMiddleware<ExceptionMiddleware>();
 
