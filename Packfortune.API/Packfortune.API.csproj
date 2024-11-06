@@ -12,6 +12,10 @@
   <ItemGroup>
     <PackageReference Include="AspNet.Security.OpenId.Steam" Version="8.0.0" />
     <PackageReference Include="AspNetCoreRateLimit" Version="5.0.0" />
+    <PackageReference Include="coverlet.collector" Version="6.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="DotNetOpenAuth" Version="4.3.4.13329" />
     <PackageReference Include="DotNetOpenAuth.Core" Version="4.3.4.13329" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
