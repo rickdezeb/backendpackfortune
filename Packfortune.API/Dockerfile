@@ -3,7 +3,7 @@ USER $APP_UID
 WORKDIR /app
 EXPOSE 443
 
-LABEL org.opencontainers.image.source=https://github.com/rickdezeb/BackendPackfortune
+LABEL org.opencontainers.image.source=https://github.com/rickdezeb/backendpackfortune
 
 FROM base AS final
 WORKDIR /app
