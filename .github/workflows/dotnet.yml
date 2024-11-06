@@ -57,7 +57,7 @@ jobs:
         run: dotnet publish "Packfortune.API/Packfortune.API.csproj" -c Release -o ./publish /p:UseAppHost=false
 
       - name: Build Docker Image 🐳
-        run: docker build -t ${{ env.IMAGE_NAME }} -f Packfortune.API/Dockerfile Packfortune.API
+        run: docker build -t ${{ env.IMAGE_NAME }} -f Packfortune.API/Dockerfile .
 
 
       - name: Log in to GitHub Container Registry 🔑
