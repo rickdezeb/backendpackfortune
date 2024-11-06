@@ -16,6 +16,7 @@ env:
   DOTNET_VERSION: '8.0.x'
   SOLUTION_NAME: 'Packfortune.API'
   SOLUTION_NAME2: 'Packfortune.API/Packfortune.API'
+  SOLUTION_NAME3: 'Packfortune'
 
 jobs:
   build-test-and-coverage:
@@ -36,13 +37,13 @@ jobs:
         run: dotnet build ${{ env.SOLUTION_NAME2 }}.sln -c Release --no-restore
 
       - name: Run Tests with Coverage 🧪
-        run: dotnet test ${{ env.SOLUTION_NAME }}.Tests/${{ env.SOLUTION_NAME }}.Tests.csproj -c Release --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=./lcov.info
+        run: dotnet test ${{ env.SOLUTION_NAME3 }}.Tests/${{ env.SOLUTION_NAME3 }}.Tests.csproj -c Release --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=./lcov.info
 
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          file: ${{ env.SOLUTION_NAME }}.Tests/lcov.info
+          file: ${{ env.SOLUTION_NAME3 }}.Tests/lcov.info
           format: lcov
 
   publish:
