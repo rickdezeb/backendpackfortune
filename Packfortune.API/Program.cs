@@ -57,11 +57,15 @@ builder.Services.AddRateLimiter(options =>
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
 
 app.UseStaticFiles(new StaticFileOptions
 {
@@ -69,6 +73,8 @@ app.UseStaticFiles(new StaticFileOptions
             Path.Combine(app.Environment.ContentRootPath, "CratesImages")),
     RequestPath = "/CratesImages"
 });
+
+
 
 app.UseMiddleware<ExceptionMiddleware>();
 
@@ -78,8 +84,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-app.UseHttpsRedirection();
 
 app.UseCors("Packfortune");
 
