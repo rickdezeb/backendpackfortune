@@ -5,8 +5,6 @@ EXPOSE 5000
 
 LABEL org.opencontainers.image.source=https://github.com/rickdezeb/backendpackfortune
 
-ENV ASPNETCORE_URLS=http://+:5000
-
 FROM base AS final
 WORKDIR /app
 COPY ./publish . 

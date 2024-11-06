@@ -74,7 +74,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-
 app.UseCors("Packfortune");
 
 app.UseRateLimiter();
