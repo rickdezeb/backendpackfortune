@@ -3,7 +3,7 @@ name: Build, Test, Dockerize! 🚀
 on:
   push:
     branches:
-      - main
+      - dev
     paths-ignore:
       - .github/workflows/*
       - README.md
