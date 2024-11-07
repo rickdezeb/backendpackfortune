@@ -40,17 +40,17 @@ namespace Packfortune.Logic
             {
                 case UserNotFoundException _:
                     message = ex.Message;
-                    statusCode = HttpStatusCode.NotFound;
+                    statusCode = HttpStatusCode.BadRequest;
                     break;
 
                 case NegativePriceException _:
                     message = ex.Message;
-                    statusCode = HttpStatusCode.NotFound;
+                    statusCode = HttpStatusCode.BadRequest;
                     break;
 
                 case NoNameException _:
                     message = ex.Message;
-                    statusCode = HttpStatusCode.NotFound;
+                    statusCode = HttpStatusCode.BadRequest;
                     break;
             }
 

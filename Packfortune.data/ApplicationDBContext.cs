@@ -12,7 +12,7 @@ namespace Packfortune.data
     {
         public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options)
         {
-
+            
         }
 
         public DbSet<User> UserCoinData { get; set; }
