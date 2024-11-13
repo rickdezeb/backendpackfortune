@@ -8,6 +8,8 @@ using AngleSharp;
 using Microsoft.AspNetCore.RateLimiting;
 using System.Threading.RateLimiting;
 using Microsoft.Extensions.FileProviders;
+using Microsoft.AspNetCore.Http.Features;
+using Packfortune.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -54,6 +56,12 @@ builder.Services.AddRateLimiter(options =>
 });
 
 
+
+builder.Services.Configure<FormOptions>(options =>
+{
+    options.MultipartBodyLengthLimit = 209715200;
+});
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -70,6 +78,7 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 
+app.UseStaticFiles();
 
 app.UseMiddleware<ExceptionMiddleware>();
 
