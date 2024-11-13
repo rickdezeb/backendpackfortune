@@ -36,7 +36,7 @@ namespace Packfortune.Tests
         }
 
         [TestMethod]
-        public async Task AddCrate_WithNegativePrice_ThrowsNegativePriceException()
+        public async Task AddCrateNegativePrice()
         {
             var mockFile = new Mock<IFormFile>();
             var stream = new MemoryStream();
@@ -53,7 +53,7 @@ namespace Packfortune.Tests
         }
 
         [TestMethod]
-        public async Task AddCrate_WithEmptyName_ThrowsNoNameException()
+        public async Task AddCrateNoName()
         {
             var mockFile = new Mock<IFormFile>();
             mockFile.Setup(f => f.FileName).Returns("test.png");
@@ -63,7 +63,7 @@ namespace Packfortune.Tests
         }
 
         [TestMethod]
-        public async Task AddCrate_WithValidData_CallsAddCrateAsync()
+        public async Task AddCrateSuccesfull()
         {
             var mockFile = new Mock<IFormFile>();
             mockFile.Setup(f => f.FileName).Returns("test.png");
@@ -72,6 +72,35 @@ namespace Packfortune.Tests
             await _crateService.AddCrate("Valid Name", 100, mockFile.Object);
 
             _mockCrateRepository.Verify(repo => repo.AddCrateAsync(It.IsAny<Crate>()), Times.Once);
+        }
+
+        [TestMethod]
+        public async Task SavePictureSuccesfull()
+        {
+            var mockFile = new Mock<IFormFile>();
+            var stream = new MemoryStream();
+            var writer = new StreamWriter(stream);
+            writer.Write("Test File Content");
+            writer.Flush();
+            stream.Position = 0;
+
+            mockFile.Setup(f => f.FileName).Returns("test.png");
+            mockFile.Setup(f => f.OpenReadStream()).Returns(stream);
+            mockFile.Setup(f => f.CopyToAsync(It.IsAny<Stream>(), default)).Returns(Task.CompletedTask);
+
+            string savedFilePath = await _crateService.SavePicture(mockFile.Object);
+
+            Assert.IsTrue(File.Exists(savedFilePath));
+        }
+
+        [TestMethod]
+        public async Task AddCrate_WithInvalidImageExtension_ThrowsException()
+        {
+            var mockFile = new Mock<IFormFile>();
+            mockFile.Setup(f => f.FileName).Returns("invalid.txt");
+            mockFile.Setup(f => f.CopyToAsync(It.IsAny<Stream>(), default)).Returns(Task.CompletedTask);
+
+            await Assert.ThrowsExceptionAsync<InvalidImageExtensionException>(() => _crateService.AddCrate("Valid Name", 100, mockFile.Object));
         }
     }
 }
