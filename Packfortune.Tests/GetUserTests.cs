@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Packfortune.Logic.Exceptions;
+using Moq;
 
 namespace Packfortune.Tests
 {
@@ -16,8 +17,8 @@ namespace Packfortune.Tests
         [TestMethod]
         public async Task EmptySteamId()
         {
-            IUserCoins userCoins = new AddUserCoinsTest();
-            UserCoinService coinService = new UserCoinService(userCoins);
+            var mockUserCoins = new Mock<IUserCoins>();
+            var coinService = new UserCoinService(mockUserCoins.Object);
             string steamId = "";
 
             var exception = await Assert.ThrowsExceptionAsync<ArgumentException>(() => coinService.GetUserInfo(steamId));
@@ -27,8 +28,11 @@ namespace Packfortune.Tests
         [TestMethod]
         public async Task UserNotFound()
         {
-            IUserCoins userCoins = new AddUserCoinsTest();
-            UserCoinService coinService = new UserCoinService(userCoins);
+            var mockUserCoins = new Mock<IUserCoins>();
+
+            mockUserCoins.Setup(repo => repo.GetUserBySteamIdAsync("342545df")).ReturnsAsync((User)null);
+
+            var coinService = new UserCoinService(mockUserCoins.Object);
             string steamId = "342545df";
 
             var exception = await Assert.ThrowsExceptionAsync<UserNotFoundException>(() => coinService.GetUserInfo(steamId));
@@ -38,8 +42,11 @@ namespace Packfortune.Tests
         [TestMethod]
         public async Task UserFound()
         {
-            IUserCoins userCoins = new AddUserCoinsTest();
-            UserCoinService coinService = new UserCoinService(userCoins);
+            var mockUserCoins = new Mock<IUserCoins>();
+
+            mockUserCoins.Setup(repo => repo.GetUserBySteamIdAsync("existingUserId")).ReturnsAsync(new User { SteamId = "existingUserId", Coins = 100 });
+
+            var coinService = new UserCoinService(mockUserCoins.Object);
             string steamId = "existingUserId";
 
             var user = await coinService.GetUserInfo(steamId);
@@ -48,6 +55,5 @@ namespace Packfortune.Tests
             Assert.AreEqual("existingUserId", user.SteamId);
             Assert.AreEqual(100, user.Coins);
         }
-
     }
 }

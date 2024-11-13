@@ -24,23 +24,35 @@ namespace Packfortune.Logic
             _environment = environment;
         }
 
-        public async Task AddCrate(string name, int price, IFormFile Picture)
+        public async Task AddCrate(string name, int price, IFormFile picture)
         {
-            string imagePath = await SavePicture(Picture);
+            var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
+            var fileExtension = Path.GetExtension(picture.FileName).ToLowerInvariant();
 
-            Crate data = new Crate();
-            data.Name = name;
-            data.Price = price;
-            data.ImagePath = imagePath;
+            if (!allowedExtensions.Contains(fileExtension))
+            {
+                throw new InvalidImageExtensionException("The file must be a PNG or JPG image.");
+            }
+
+            string imagePath = await SavePicture(picture);
+
+            Crate data = new Crate
+            {
+                Name = name,
+                Price = price,
+                ImagePath = imagePath
+            };
 
             if (data.Price <= 0)
             {
                 throw new NegativePriceException("The price is too low.");
             }
+
             if (string.IsNullOrEmpty(data.Name))
             {
                 throw new NoNameException("The name field is required.");
             }
+
             if (string.IsNullOrEmpty(data.ImagePath))
             {
                 throw new Exception("You need to upload an image!");
@@ -49,7 +61,7 @@ namespace Packfortune.Logic
             await _crateRepository.AddCrateAsync(data);
         }
 
-        private async Task<string> SavePicture(IFormFile Picture)
+        public async Task<string> SavePicture(IFormFile Picture)
         {
             string filePath;
             filePath = Path.Combine(_environment.ContentRootPath, "CratesImages");
