@@ -20,5 +20,18 @@ namespace Packfortune.Tests
             var exception = await Assert.ThrowsExceptionAsync<ArgumentException>(() => coinService.ProcessUserCoinDataAsync(user));
             Assert.AreEqual("Coins cannot be negative.", exception.Message);
         }
+
+        [TestMethod]
+        public async Task AddPositiveCoinsAsync()
+        {
+            IUserCoins userCoins = new AddUserCoinsTest();
+            UserCoinService coinService = new UserCoinService(userCoins);
+
+            var user = new User { Coins = 10 };
+
+            await coinService.ProcessUserCoinDataAsync(user);
+            Assert.AreEqual(10, user.Coins);
+        }
+
     }
 }
