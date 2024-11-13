@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Packfortune.Logic.Models;
 using Packfortune.Logic.Interfaces;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using Packfortune.Logic.Exceptions;
 
 namespace Packfortune.Logic
 {
@@ -30,7 +31,19 @@ namespace Packfortune.Logic
 
         public async Task<User> GetUserInfo(string steamId)
         {
-            return await _userCoinRepository.GetUserBySteamIdAsync(steamId);
+            if (string.IsNullOrWhiteSpace(steamId))
+            {
+                throw new ArgumentException("Steam ID cannot be null or empty.", nameof(steamId));
+            }
+
+            var user = await _userCoinRepository.GetUserBySteamIdAsync(steamId);
+
+            if (user == null)
+            {
+                throw new UserNotFoundException($"User with Steam ID '{steamId}' was not found.");
+            }
+
+            return user;
         }
     }
 }
