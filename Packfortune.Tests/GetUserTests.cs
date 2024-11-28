@@ -17,7 +17,7 @@ namespace Packfortune.Tests
         [TestMethod]
         public async Task EmptySteamId()
         {
-            var mockUserCoins = new Mock<IUserCoins>();
+            var mockUserCoins = new Mock<IUserCoinsRepository>();
             var coinService = new UserCoinService(mockUserCoins.Object);
             string steamId = "";
 
@@ -28,7 +28,7 @@ namespace Packfortune.Tests
         [TestMethod]
         public async Task UserNotFound()
         {
-            var mockUserCoins = new Mock<IUserCoins>();
+            var mockUserCoins = new Mock<IUserCoinsRepository>();
 
             mockUserCoins.Setup(repo => repo.GetUserBySteamIdAsync("342545df")).ReturnsAsync((User)null);
 
@@ -42,7 +42,7 @@ namespace Packfortune.Tests
         [TestMethod]
         public async Task UserFound()
         {
-            var mockUserCoins = new Mock<IUserCoins>();
+            var mockUserCoins = new Mock<IUserCoinsRepository>();
 
             mockUserCoins.Setup(repo => repo.GetUserBySteamIdAsync("existingUserId")).ReturnsAsync(new User { SteamId = "existingUserId", Coins = 100 });
 

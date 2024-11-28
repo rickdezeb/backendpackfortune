@@ -16,10 +16,17 @@ namespace Packfortune.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateCrate([FromForm] string name, [FromForm] int price, [FromForm] IFormFile Picture)
+        public async Task<IActionResult> CreateCrate(CreateCrateRequest request)
         {
-            await _cratesService.AddCrate(name, price, Picture);
+            await _cratesService.AddCrate(request.Name, request.Price, request.Picture);
             return Ok();
+        }
+
+        [HttpGet] 
+        public async Task <IActionResult> GetAllCrates()
+        {
+            var crates = await _cratesService.GetAllCrates();
+            return Ok(crates);
         }
     }
 }
