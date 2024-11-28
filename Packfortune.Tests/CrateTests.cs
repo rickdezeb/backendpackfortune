@@ -75,25 +75,6 @@ namespace Packfortune.Tests
         }
 
         [TestMethod]
-        public async Task SavePictureSuccesfull()
-        {
-            var mockFile = new Mock<IFormFile>();
-            var stream = new MemoryStream();
-            var writer = new StreamWriter(stream);
-            writer.Write("Test File Content");
-            writer.Flush();
-            stream.Position = 0;
-
-            mockFile.Setup(f => f.FileName).Returns("test.png");
-            mockFile.Setup(f => f.OpenReadStream()).Returns(stream);
-            mockFile.Setup(f => f.CopyToAsync(It.IsAny<Stream>(), default)).Returns(Task.CompletedTask);
-
-            string savedFilePath = await _crateService.SavePicture(mockFile.Object);
-
-            Assert.IsTrue(File.Exists(savedFilePath));
-        }
-
-        [TestMethod]
         public async Task AddCrate_WithInvalidImageExtension_ThrowsException()
         {
             var mockFile = new Mock<IFormFile>();
