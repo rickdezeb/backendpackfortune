@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace Packfortune.Logic.Interfaces
 {
-    public interface ICrates
+    public interface ICratesRepository
     {
         Task AddCrateAsync(Crate crateData);
+        Task<List<Crate>> GetAllCratesAsync();
     }
 }

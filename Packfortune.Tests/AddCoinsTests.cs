@@ -9,12 +9,12 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Packfortune.Tests
 {
     [TestClass]
-    public class AddCoinsTest
+    public class AddCoinsTests
     {
         [TestMethod]
         public async Task AddNegativeCoinsAsync()
         {
-            var mockUserCoins = new Mock<IUserCoins>();
+            var mockUserCoins = new Mock<IUserCoinsRepository>();
 
             var coinService = new UserCoinService(mockUserCoins.Object);
 
@@ -27,7 +27,7 @@ namespace Packfortune.Tests
         [TestMethod]
         public async Task AddPositiveCoinsAsync()
         {
-            var mockUserCoins = new Mock<IUserCoins>();
+            var mockUserCoins = new Mock<IUserCoinsRepository>();
 
             mockUserCoins.Setup(repo => repo.AddUserCoinDataAsync(It.IsAny<User>())).Returns(Task.CompletedTask);
 

@@ -10,18 +10,29 @@ using Packfortune.Logic.Models;
 
 namespace Packfortune.data
 {
-    public class UserCoins : IUserCoins
+    public class CoinRepository : IUserCoinsRepository
     {
         private readonly ApplicationDBContext _context;
 
-        public UserCoins(ApplicationDBContext context)
+        public CoinRepository(ApplicationDBContext context)
         {
             _context = context;
         }
 
         public async Task AddUserCoinDataAsync(User userCoinData)
         {
-            _context.UserCoinData.Add(userCoinData);
+            var existingUser = await _context.UserCoinData.FirstOrDefaultAsync(u => u.SteamId == userCoinData.SteamId);
+
+            if (existingUser != null)
+            {
+                existingUser.Coins += userCoinData.Coins;
+                _context.UserCoinData.Update(existingUser);
+            }
+            else
+            {
+                _context.UserCoinData.Add(userCoinData);
+            }
+
             await _context.SaveChangesAsync();
         }
 
