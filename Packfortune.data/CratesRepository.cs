@@ -1,15 +1,16 @@
-﻿using Packfortune.data;
+﻿using Microsoft.EntityFrameworkCore;
+using Packfortune.data;
 using Packfortune.Logic.Interfaces;
 using Packfortune.Logic.Models;
 using System.Threading.Tasks;
 
 namespace Packfortune.Data
 {
-    public class Crates : ICrates
+    public class CratesRepository : ICratesRepository
     {
         private readonly ApplicationDBContext _context;
 
-        public Crates(ApplicationDBContext context)
+        public CratesRepository(ApplicationDBContext context)
         {
             _context = context;
         }
@@ -18,6 +19,12 @@ namespace Packfortune.Data
         {
             _context.CrateData.Add(crateData);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task <List<Crate>> GetAllCratesAsync()
+        {
+            var crates = await _context.CrateData.ToListAsync();
+            return crates;
         }
     }
 }

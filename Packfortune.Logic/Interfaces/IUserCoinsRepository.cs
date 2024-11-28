@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Packfortune.Logic.Interfaces
 {
-    public interface IUserCoins
+    public interface IUserCoinsRepository
     {
         Task AddUserCoinDataAsync(User userCoinData);
         Task<User> GetUserBySteamIdAsync(string steamId);

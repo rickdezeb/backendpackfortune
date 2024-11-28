@@ -12,9 +12,9 @@ namespace Packfortune.Logic
 {
     public class UserCoinService
     {
-        private readonly IUserCoins _userCoinRepository;
+        private readonly IUserCoinsRepository _userCoinRepository;
 
-        public UserCoinService(IUserCoins userCoinRepository)
+        public UserCoinService(IUserCoinsRepository userCoinRepository)
         {
             _userCoinRepository = userCoinRepository;
         }

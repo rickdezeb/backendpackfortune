@@ -15,10 +15,10 @@ namespace Packfortune.Logic
 {
     public class CratesService
     {
-        private readonly ICrates _crateRepository;
+        private readonly ICratesRepository _crateRepository;
         private readonly IHostEnvironment _environment;
 
-        public CratesService(ICrates crateRepository, IHostEnvironment environment)
+        public CratesService(ICratesRepository crateRepository, IHostEnvironment environment)
         {
             _crateRepository = crateRepository;
             _environment = environment;
@@ -61,18 +61,28 @@ namespace Packfortune.Logic
             await _crateRepository.AddCrateAsync(data);
         }
 
-        public async Task<string> SavePicture(IFormFile Picture)
+        public async Task<string> SavePicture(IFormFile picture)
         {
-            string filePath;
-            filePath = Path.Combine(_environment.ContentRootPath, "CratesImages");
-            filePath = Path.Combine(filePath, Picture.FileName);
+            string directoryPath = Path.Combine(_environment.ContentRootPath, "wwwroot", "CratesImages");
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            string fileName = Path.GetFileName(picture.FileName);
+            string filePath = Path.Combine(directoryPath, fileName);
 
             using (var stream = new FileStream(filePath, FileMode.Create))
             {
-                await Picture.CopyToAsync(stream);
+                await picture.CopyToAsync(stream);
             }
 
-            return filePath;
+            return Path.Combine("CratesImages", fileName);
+        }
+
+        public async Task<List<Crate>> GetAllCrates()
+        {
+            return await _crateRepository.GetAllCratesAsync();
         }
     }
 }
