@@ -16,7 +16,7 @@ namespace Packfortune.Tests
     [TestClass]
     public class CrateTests
     {
-        private Mock<ICrates> _mockCrateRepository;
+        private Mock<ICratesRepository> _mockCrateRepository;
         private Mock<IHostEnvironment> _mockEnvironment;
         private CratesService _crateService;
 
@@ -29,7 +29,7 @@ namespace Packfortune.Tests
                 Directory.CreateDirectory(testDirectory);
             }
 
-            _mockCrateRepository = new Mock<ICrates>();
+            _mockCrateRepository = new Mock<ICratesRepository>();
             _mockEnvironment = new Mock<IHostEnvironment>();
             _mockEnvironment.Setup(env => env.ContentRootPath).Returns(Directory.GetCurrentDirectory());
             _crateService = new CratesService(_mockCrateRepository.Object, _mockEnvironment.Object);

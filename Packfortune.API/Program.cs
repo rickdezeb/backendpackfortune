@@ -31,8 +31,8 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 
-builder.Services.AddScoped<IUserCoins, UserCoins>();
-builder.Services.AddScoped<ICrates, Crates>();
+builder.Services.AddScoped<IUserCoinsRepository, CoinRepository>();
+builder.Services.AddScoped<ICratesRepository, CratesRepository>();
 
 builder.Services.AddScoped<UserCoinService>();
 builder.Services.AddScoped<CratesService>();
