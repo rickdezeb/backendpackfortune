@@ -2,6 +2,7 @@
 using Packfortune.data;
 using Packfortune.Logic.Interfaces;
 using Packfortune.Logic.Models;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 namespace Packfortune.Data
@@ -25,6 +26,18 @@ namespace Packfortune.Data
         {
             var crates = await _context.CrateData.ToListAsync();
             return crates;
+        }
+
+        public async Task UpdateCrate(Crate data)
+        {
+            _context.CrateData.Update(data);
+            await _context.SaveChangesAsync();
+        }
+        public async Task RemoveCrateAsync(int id)
+        {
+            var crate = await _context.CrateData.FirstOrDefaultAsync(c => c.Id == id);
+            _context.CrateData.Remove(crate);
+            await _context.SaveChangesAsync();
         }
     }
 }

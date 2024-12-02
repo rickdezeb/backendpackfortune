@@ -57,6 +57,11 @@ namespace Packfortune.Logic
                     message = ex.Message;
                     statusCode = HttpStatusCode.BadRequest;
                     break;
+
+                case InvalidIdException _:
+                    message = ex.Message;
+                    statusCode = HttpStatusCode.BadRequest;
+                    break;
             }
 
             var response = new
