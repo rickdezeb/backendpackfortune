@@ -84,5 +84,50 @@ namespace Packfortune.Logic
         {
             return await _crateRepository.GetAllCratesAsync();
         }
+
+        public async Task UpdateCrate(int id, string name, int price, IFormFile picture)
+        {
+            string imagePath = await SavePicture(picture);
+
+            if (id <= 0)
+            {
+                throw new InvalidIdException("The ID is invalid.");
+            }
+
+            if (price <= 0)
+            {
+                throw new NegativePriceException("The price is too low.");
+            }
+
+            if (string.IsNullOrEmpty(name))
+            {
+                throw new NoNameException("The name field is required.");
+            }
+
+            if (string.IsNullOrEmpty(imagePath))
+            {
+                throw new Exception("You need to upload an image!");
+            }
+
+            var data = new Crate
+            {
+                Id = id,
+                Name = name,
+                Price = price,
+                ImagePath = imagePath
+
+            };
+
+            await _crateRepository.UpdateCrate(data);
+        }
+        public async Task RemoveCrate(int id)
+        {
+            if (id <= 0)
+            {
+                throw new InvalidIdException("The ID is invalid.");
+            }
+
+            await _crateRepository.RemoveCrateAsync(id);
+        }
     }
 }
