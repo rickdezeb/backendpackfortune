@@ -11,5 +11,6 @@ namespace Packfortune.Logic.Interfaces
     {
         Task AddUserCoinDataAsync(User userCoinData);
         Task<User> GetUserBySteamIdAsync(string steamId);
+        Task UpdateUserCoinsAsync(string steamId, int coins);
     }
 }
