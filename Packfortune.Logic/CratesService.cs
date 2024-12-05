@@ -85,8 +85,17 @@ namespace Packfortune.Logic
             return await _crateRepository.GetAllCratesAsync();
         }
 
+
         public async Task UpdateCrate(int id, string name, int price, IFormFile picture)
         {
+            var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
+            var fileExtension = Path.GetExtension(picture.FileName).ToLowerInvariant();
+
+            if (!allowedExtensions.Contains(fileExtension))
+            {
+                throw new InvalidImageExtensionException("The file must be a PNG or JPG image.");
+            }
+
             string imagePath = await SavePicture(picture);
 
             if (id <= 0)
