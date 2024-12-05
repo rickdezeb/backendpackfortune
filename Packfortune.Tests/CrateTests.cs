@@ -83,5 +83,7 @@ namespace Packfortune.Tests
 
             await Assert.ThrowsExceptionAsync<InvalidImageExtensionException>(() => _crateService.AddCrate("Valid Name", 100, mockFile.Object));
         }
+        
+
     }
 }
