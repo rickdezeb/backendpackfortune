@@ -16,11 +16,13 @@ namespace Packfortune.Logic
     public class CratesService
     {
         private readonly ICratesRepository _crateRepository;
+        private readonly IUserCoinsRepository _coinsRepository;
         private readonly IHostEnvironment _environment;
 
-        public CratesService(ICratesRepository crateRepository, IHostEnvironment environment)
+        public CratesService(ICratesRepository crateRepository, IUserCoinsRepository coinsRepository, IHostEnvironment environment)
         {
             _crateRepository = crateRepository;
+            _coinsRepository = coinsRepository;
             _environment = environment;
         }
 
@@ -137,6 +139,43 @@ namespace Packfortune.Logic
             }
 
             await _crateRepository.RemoveCrateAsync(id);
+        }
+
+        public async Task BuyCrate(string steamId, int crateId)
+        {
+            if (crateId <= 0)
+            {
+                throw new InvalidIdException("The ID is invalid.");
+            }
+
+            var user = await _coinsRepository.GetUserBySteamIdAsync(steamId);
+            if (user == null)
+            {
+                throw new UserNotFoundException("User not found.");
+            }
+
+            var crate = await _crateRepository.GetCrateByIdAsync(crateId);
+            if (crate == null)
+            {
+                throw new ArgumentException("Crate not found.");
+            }
+
+            if (user.Coins < crate.Price)
+            {
+                throw new ArgumentException("You don't have enough coins to buy this crate.");
+            }
+
+            user.Coins -= crate.Price;
+
+            await _coinsRepository.UpdateUserAsync(user);
+
+            var ownerCrate = new OwnerCrate
+            {
+                SteamId = steamId,
+                CrateId = crateId
+            };
+
+            await _crateRepository.AddOwnerCrateAsync(ownerCrate);
         }
     }
 }

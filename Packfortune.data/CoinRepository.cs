@@ -42,11 +42,8 @@ namespace Packfortune.data
             return user;
         }
 
-        public async Task UpdateUserCoinsAsync(string steamId, int coins)
+        public async Task UpdateUserAsync(User user)
         {
-            var user = await _context.UserCoinData.FirstOrDefaultAsync(u => u.SteamId == steamId);
-            int newCoins = user.Coins + coins;
-            user.Coins = newCoins;
             _context.UserCoinData.Update(user);
             await _context.SaveChangesAsync();
         }

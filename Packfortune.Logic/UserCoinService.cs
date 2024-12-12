@@ -45,16 +45,5 @@ namespace Packfortune.Logic
 
             return user;
         }
-
-        public async Task UpdateUserCoinsAsync(string steamId, int coins)
-        {
-            if (coins < 0)
-            {
-                throw new ArgumentException("Coins cannot be negative.");
-            }
-
-            await _userCoinRepository.UpdateUserCoinsAsync(steamId, coins);
-        }
-
     }
 }

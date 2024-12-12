@@ -22,7 +22,7 @@ namespace Packfortune.Data
             await _context.SaveChangesAsync();
         }
 
-        public async Task <List<Crate>> GetAllCratesAsync()
+        public async Task<List<Crate>> GetAllCratesAsync()
         {
             var crates = await _context.CrateData.ToListAsync();
             return crates;
@@ -33,10 +33,45 @@ namespace Packfortune.Data
             _context.CrateData.Update(data);
             await _context.SaveChangesAsync();
         }
+
         public async Task RemoveCrateAsync(int id)
         {
             var crate = await _context.CrateData.FirstOrDefaultAsync(c => c.Id == id);
             _context.CrateData.Remove(crate);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<Crate> GetCrateByIdAsync(int crateId)
+        {
+            return await _context.CrateData.FirstOrDefaultAsync(c => c.Id == crateId);
+        }
+        public async Task AddOwnerCrateAsync(OwnerCrate ownerCrate)
+        {
+            _context.OwnerCrates.Add(ownerCrate);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task BuyCrateAsync(string steamId, int crateId)
+        {
+            var user = await _context.UserCoinData.FirstOrDefaultAsync(u => u.SteamId == steamId);
+            var crate = await _context.CrateData.FirstOrDefaultAsync(c => c.Id == crateId);
+
+            if (user == null || crate == null)
+            {
+                throw new ArgumentException("User or Crate not found.");
+            }
+
+            user.Coins -= crate.Price;
+            _context.UserCoinData.Update(user);
+
+            var ownerCrate = new OwnerCrate
+            {
+                SteamId = steamId,
+                CrateId = crateId
+            };
+
+            _context.OwnerCrates.Add(ownerCrate);
+
             await _context.SaveChangesAsync();
         }
     }
