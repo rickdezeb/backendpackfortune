@@ -43,5 +43,12 @@ namespace Packfortune.API.Controllers
             await _cratesService.RemoveCrate(id);
             return Ok();
         }
+
+        [HttpPost("buy")]
+        public async Task<IActionResult> BuyCrate(BuyCrateRequest request)
+        {
+            await _cratesService.BuyCrate(request.SteamId, request.CrateId);
+            return Ok();
+        }
     }
 }

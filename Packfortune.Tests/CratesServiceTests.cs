@@ -67,5 +67,20 @@ namespace Packfortune.Logic.Tests
 
             await _crateService.UpdateCrate(1, "Test Crate", 100, mockFile.Object);
         }
+       
+        [TestMethod]
+        public async Task UpdateCrate_ValidData_ShouldUpdateCrate()
+        {
+            var mockFile = new Mock<IFormFile>();
+            mockFile.Setup(f => f.FileName).Returns("test.jpg");
+            await _crateService.UpdateCrate(1, "Test Crate", 100, mockFile.Object);
+            _mockCrateRepository.Verify(x => x.UpdateCrate(It.IsAny<Crate>()), Times.Once);
+        }
+
+        [TestMethod]
+        public async Task RemoveCrate_InvalidID_ShouldThrowInvalidIdException()
+        {
+            await Assert.ThrowsExceptionAsync<InvalidIdException>(() => _crateService.RemoveCrate(0));
+        }
     }
 }

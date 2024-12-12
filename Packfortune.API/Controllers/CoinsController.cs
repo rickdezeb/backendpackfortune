@@ -39,13 +39,5 @@ namespace Packfortune.API.Controllers
             }
             return Ok(user);
         }
-
-        [HttpPut("{steamId}")]
-        public async Task<IActionResult> UpdateUserCoins(string steamId, [FromBody] int coins)
-        {
-            await _userCoinService.UpdateUserCoinsAsync(steamId, coins);
-            return Ok();
-        }
-
     }
 }
