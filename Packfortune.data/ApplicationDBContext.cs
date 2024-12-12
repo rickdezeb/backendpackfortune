@@ -17,6 +17,8 @@ namespace Packfortune.data
 
         public DbSet<User> UserCoinData { get; set; }
         public DbSet<Crate> CrateData { get; set; }
+        public DbSet<OwnerCrate> OwnerCrates { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>()
@@ -25,7 +27,10 @@ namespace Packfortune.data
 
             modelBuilder.Entity<Crate>()
                 .ToTable("crates");
-        }
 
+            modelBuilder.Entity<OwnerCrate>()
+                .ToTable("owned_crates")
+                .HasKey(oc => oc.Id);
+        }
     }
 }

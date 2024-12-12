@@ -13,5 +13,9 @@ namespace Packfortune.Logic.Interfaces
         Task<List<Crate>> GetAllCratesAsync();
         Task UpdateCrate(Crate data);
         Task RemoveCrateAsync(int id);
+        Task BuyCrateAsync(string steamId, int crateId);
+        Task<Crate> GetCrateByIdAsync(int crateId);
+        Task AddOwnerCrateAsync(OwnerCrate ownerCrate);
+
     }
 }
